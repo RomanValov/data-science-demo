@@ -21,10 +21,14 @@ hls_stairs -- четыре слоя равными ступеньками: n, 3/
 
 Изначально также рисовал столбчатые диаграмы для разных срезов. Потом дошло, что можно собрать данные в DataFrame и им уже свободно манипулировать. В частности отсортировать по значению accuracy.
 
-Т.к. запусков много и все это долго, оттестировал подход на сильно укороченном наборе тренировочных данных:
-
-https://github.com/RomanValov/data-science-demo/blob/master/ml-nene-dumb.ipynb
-
-На ночь оставил просчет на полном наборе данных, если успеет досчитаться к утру, будет здесь:
-
 https://github.com/RomanValov/data-science-demo/blob/master/ml-nene.ipynb
+
+3) multi layer perceptrons
+На основе полученных результатов и данных от других участников запустил новый перебор.
+Из функций активации оставил только relu, а все функции для создания hidden_layer_size стали создавать два уровня:
+hls_equals -- n, n
+hls_divby2 -- n, n/2
+hls_divby3 -- n, n/3
+hls_divby4 -- n, n/4
+
+https://github.com/RomanValov/data-science-demo/blob/master/ml-nene-hint.ipynb
