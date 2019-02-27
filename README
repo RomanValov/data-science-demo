@@ -1,0 +1,30 @@
+1) k nearest neighbors
+Перебор n_neighbors от 1 до 24.
+В процессе загрузки данных и подсчета предсказаний выводится затраченное время с помощью %time, а также значение accuracy_score для каждого значения n_neighbors.  Потом на графике наглядно смотрим тренд:
+
+https://bitbucket.org/RomanValov/data-science-demo/src/default/ml-knn.ipynb?viewer=nbviewer
+
+2) multi layer perceptrons
+Перебор по трем измерениям:
+2.1) Функция для создания параметра hidden_layer_size на основе одного аргумнента:
+hls_single -- один слой с n перспетронов
+hls_double -- два слоя c n песпептронов
+hls_triple -- три слоя с n перспетронов
+hls_bisect -- четыре слоя бинарным делением: n, n/2, n/4, n/8
+hls_stairs -- четыре слоя равными ступеньками: n, 3/4n, 2/4n, 1/4n
+2.2) Аргумент функции для создания параметра hidden_layer_size -- от 100 до 800 с шагом 100.
+2.3) Функция активации -- identity/logistic/tanh/relu
+
+Потом для каждого из набора перечисленных значений создаем модель, обучаем, строим график итераций (loss_curve_), тестируем, запоминаем accuracy_score
+
+Для воспроизводимости результатов random_state=0 для всех моделей
+
+Изначально также рисовал столбчатые диаграмы для разных срезов. Потом дошло, что можно собрать данные в DataFrame и им уже свободно манипулировать. В частности отсортировать по значению accuracy.
+
+Т.к. запусков много и все это долго, оттестировал подход на сильно укороченном наборе тренировочных данных:
+
+https://bitbucket.org/RomanValov/data-science-demo/src/default/ml-nene-dumb.ipynb?viewer=nbviewer
+
+На ночь оставил просчет на полном наборе данных, если успеет досчитаться к утру, будет здесь:
+
+https://bitbucket.org/RomanValov/data-science-demo/src/default/ml-nene.ipynb?viewer=nbviewer
