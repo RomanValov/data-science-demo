@@ -2,7 +2,7 @@
 Перебор n_neighbors от 1 до 24.
 В процессе загрузки данных и подсчета предсказаний выводится затраченное время с помощью %time, а также значение accuracy_score для каждого значения n_neighbors.  Потом на графике наглядно смотрим тренд:
 
-https://bitbucket.org/RomanValov/data-science-demo/src/default/ml-knn.ipynb?viewer=nbviewer
+https://github.com/RomanValov/data-science-demo/blob/master/ml-knn.ipynb
 
 2) multi layer perceptrons
 Перебор по трем измерениям:
@@ -23,8 +23,8 @@ hls_stairs -- четыре слоя равными ступеньками: n, 3/
 
 Т.к. запусков много и все это долго, оттестировал подход на сильно укороченном наборе тренировочных данных:
 
-https://bitbucket.org/RomanValov/data-science-demo/src/default/ml-nene-dumb.ipynb?viewer=nbviewer
+https://github.com/RomanValov/data-science-demo/blob/master/ml-nene-dumb.ipynb
 
 На ночь оставил просчет на полном наборе данных, если успеет досчитаться к утру, будет здесь:
 
-https://bitbucket.org/RomanValov/data-science-demo/src/default/ml-nene.ipynb?viewer=nbviewer
+https://github.com/RomanValov/data-science-demo/blob/master/ml-nene.ipynb
